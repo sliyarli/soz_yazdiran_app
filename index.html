@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sözlərin hərf sayını seçməklə yazdıran app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="outputText">
+      <textarea
+        id="outputTextarea"
+        rows="4"
+        cols="50"
+        placeholder=""
+      ></textarea>
+    </div>
+    <div id="appContainer">
+      <div id="wordForm">
+        <label for="wordInput" id="wordLabel">Sözü daxil edin 📑</label>
+        <div id="givenWord">
+          <input type="text" id="wordInput" required />
+          <div id="wordValidationMessage" class="validation-message">
+            
+          </div>
+
+          <button id="generateButton">Hazırla! ✔</button>
+        </div>
+      </div>
+      <div id="output">
+        <div id="repetitionInputs"></div>
+
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

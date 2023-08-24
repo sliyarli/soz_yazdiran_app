@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* transition: all 1.5s ease !important; */
+  font-family: "DM Sans", sans-serif;
+  resize: none;
+}
+
+body {
+  background-color: blueviolet;
+  margin: 0;
+}
+
+#appContainer,
+#givenWord,
+#wordForm,
+#repetitionInputs,
+#outputText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#appContainer {
+  height: 100vh;
+}
+
+#givenWord {
+  flex-direction: column;
+  gap: 20px;
+}
+
+#givenWord,
+#wordForm {
+  flex-basis: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+#wordForm {
+  padding: 20px;
+}
+
+label {
+  color: white;
+  font-size: 24px;
+}
+
+input {
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+#wordInput {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button {
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: white;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+#output {
+  flex-basis: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+#repetitionInputs {
+  flex-basis: 100%;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.input-container {
+  flex-basis: calc(50% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#repetitionInputs input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+#outputText {
+  height: auto;
+  visibility: hidden;
+  padding: 50px;
+  opacity: 0;
+}
+
+#outputTextarea {
+  border: 2px solid blueviolet;
+  padding: 10px;
+  font-size: 18px;
+  text-align: justify;
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-bottomleft: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 100%;
+  height: 150px;
+}
+
+#outputText.visible,
+#repetitionInputs.visible {
+  opacity: 1;
+}
+
+#outputTextarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+#outputTextarea::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+#outputTextarea::-webkit-scrollbar-thumb {
+  background-color: blueviolet;
+  border-radius: 5px;
+}
+
+#outputTextarea::-webkit-scrollbar-thumb:hover {
+  background-color: darkblue;
+}
+
+.validation-message {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: none;
+  border: 3px solid rgb(232, 26, 26);
+}
