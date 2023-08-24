@@ -15,3 +15,7 @@ WordCraft is a web application that allows users to manipulate and transform wor
 
    ```bash
    git clone https://github.com/your-username/wordcraft-app.git
+
+2. Try it online:
+
+https://sliyarli.github.io/wordCraft/
