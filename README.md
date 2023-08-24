@@ -18,5 +18,5 @@ WordCraft is a web application that allows users to manipulate and transform wor
 
 2. Try it online:
 
-```bash
-https://sliyarli.github.io/wordCraft/
+   ```bash
+   https://sliyarli.github.io/wordCraft/
